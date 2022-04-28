@@ -1,7 +1,7 @@
-#Kubernetes: Creation of multiple deployments with single deployment file using Helm
+# Kubernetes: Creation of multiple deployments with single deployment file using Helm
 
-####NOTE: I use Helm charts in this Project. To know more about what Helm is can refer to my medium article https://medium.com/@archana.gurrewala96/introduction-to-helm-207657ad3e7f 
-####Let's say we have usecase wherein we need multiple pods which does same functionality but differs in some variables for each pod. In that case we can declare those variables in values.yaml file and loop those variables in deployment.yaml file.
+#### NOTE: I use Helm charts in this Project. To know more about what Helm is can refer to my medium article https://medium.com/@archana.gurrewala96/introduction-to-helm-207657ad3e7f 
+#### Let's say we have usecase wherein we need multiple pods which does same functionality but differs in some variables for each pod. In that case we can declare those variables in values.yaml file and loop those variables in deployment.yaml file.
 
 
 We can give the variables which differ for each pod in values.yaml as below
