@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-api-deployment
+  labels:
+    app: ingress-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ingress-api
+  template:
+    metadata:
+      labels:
+        app: ingress-api
+    spec:
+      containers:
+        - name: ingress-api
+          image: ingressApi
+          ports:
+            - containerPort: 8000
