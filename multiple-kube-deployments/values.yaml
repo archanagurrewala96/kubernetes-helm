@@ -1,0 +1,5 @@
+details:
+  - podname: pod1
+    username: user1
+  - podname: pod2
+    username: user2

@@ -1,0 +1,25 @@
+{{- range $details := .Values.details }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ $details.podname}}
+  name: {{ $details.podname}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ $details.podname}}
+  template:
+    metadata:
+      labels:
+        app: {{ $details.podname}}
+    spec:
+      containers:
+      - image: gcr.io/nanda-arvapaly-bc-test/sample:13
+        name: {{ $details.podname}}
+        env:
+          - name: Username
+            value: {{ $details.username}}
+---
+{{- end }}
