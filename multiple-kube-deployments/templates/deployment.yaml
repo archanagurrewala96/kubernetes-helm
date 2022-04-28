@@ -16,7 +16,7 @@ spec:
         app: {{ $details.podname}}
     spec:
       containers:
-      - image: gcr.io/nanda-arvapaly-bc-test/sample:13
+      - image: gcr.io/archana-test/sample:13
         name: {{ $details.podname}}
         env:
           - name: Username
